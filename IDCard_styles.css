@@ -1,0 +1,108 @@
+/* Colors */
+.first-color {
+    background: #74C2EC;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px; /* Space at the top for institution name and logo */
+}
+
+.flip-card {
+    perspective: 1000px;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px; /* Adjust height as needed */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg); /* Change to rotateX for vertical flip */
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px #74C2EC;
+}
+
+.flip-card-front {
+    z-index: 1;
+}
+
+.flip-card-back {
+    transform: rotateX(180deg); /* Initial flip to back */
+}
+
+.institution-info {
+    padding-top: 20px; /* Space for institution name and logo */
+}
+
+.institution-logo {
+    width: 200px; /* Adjust size as needed */
+    margin: auto;
+}
+
+
+.id-card {
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.photo img {
+    border-radius: 50%;
+    border: 2px solid #74C2EC; /* Example border */
+}
+
+.student-details {
+    text-align: left; /* Align text to the left */
+}
+
+.student-details h3 {
+    text-align: center; /* Center the "Student Details" title */
+}
+
+.student-details h4,
+.student-details p {
+    margin: 8px 0; /* Add margin between elements */
+    text-align: left; /* Align details to the left */
+}
+
+
+.institution-address h3 {
+    margin-bottom: 10px;
+}
+
+/* Additional styling for QR code */
+/* Additional styling for QR code */
+.qr-code {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: 2px dashed #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Add more styling as needed */
+}

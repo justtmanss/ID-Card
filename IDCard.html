@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <link rel="stylesheet" href="IDCard_styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flip-card-border">
+            <div class="flip-card" id="card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="id-card">
+                            <div class="institution-info">
+                                <!-- Institution logo and name -->
+                                <img src="logo.png" alt="Institution Logo" class="institution-logo" width="200">
+                            </div>
+                            <div class="photo">
+                                <img src="profile.png" alt="Photograph" width="150" />
+                                <!-- Placeholder for photograph -->
+                            </div>
+                            <div class="student-details">
+                                <h3 class="first-color"><b>Student Details</b></h3>
+                                <h4><b>Name:</b> Jane Doe</h4>
+                                <p><b>Date of Birth:</b> May 1, 2005</p>
+                                <p><b>Gender:</b> Female</p>
+                                <p><b>Address:</b> India</p>
+                                <p><b>Email ID:</b> Jane@gmail.com</p>
+                                <p><b>Department:</b> Computer Science Engineering</p>    
+                                <!-- Add other student details as needed -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="id-card">
+                            <div class="institution-info">
+                                <!-- Institution name and logo -->
+                                <img src="logo.png" alt="Institution Logo" class="institution-logo">
+                             </div>
+                            <div class="qr-code">
+                                <img src="image.png" alt="Qr Code" width="250">
+                                <!-- Placeholder for QR code , qr takes you too the bits pilani website-->
+                            </div>
+                            <div class="institution-address">
+                                <h3><a href="https://www.bits-pilani.ac.in/" target="_blank">Institution Address (main campus)</a></h3>
+                                <p>Vidya Vihar, Pilani, Rajasthan 333031</p>
+                                <!-- Add other institution details as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("card").addEventListener("click", function() {
+            this.classList.toggle('flipped');
+        });
+    </script>
+</body>
+</html>
+
